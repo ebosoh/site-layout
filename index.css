@@ -2,33 +2,33 @@
     margin: 0;
     padding: 0;
 }
-
-.grid div:nth-child(even){
-    background-color: red;
+body{
+    background-color: rgb(132, 132, 135);
 }
 
-.grid div:nth-child(odd){
-    background-color: green;
-}
 
 .grid{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 60px 50px 1fr 100px;
     grid-template-areas: 
-    "title title"
-    "header header"
+    "sidebar title"
+    "sidebar header"
     "sidebar matter"
     "footer footer";
-    grid-gap: 5px;
-    grid-gap: 5px;
-    grid-row: span ;
+    column-gap: 10px;
+    row-gap: 5px;
+   
+    height: 800px;
+    
     
     
 }
 
 .title{
     grid-area: title;
+    background-color: black;
+    
 }
 .header{
     grid-area: header;
@@ -43,14 +43,18 @@
     grid-area: footer;
 }
 
-.button-one{
-    background-color: green;
-    width: 300px;
-    margin-top: 20px;
-    height: 70px;
-    font-size: 50px;
-    margin-left: 20px;
-    color: aliceblue;
-    font-family: roboto;
-    
+.search-box{
+width: 400px;
+height: 40px;
+margin-top: 5px;
+margin-bottom: 5px;
+margin-left: 5px;
+float: left;
+row-gap: 10px;
+border: solid; color: brown;
+border-radius: 10px;
+align-self: center;
+
+
 }
+
