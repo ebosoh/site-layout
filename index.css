@@ -43,3 +43,14 @@
     grid-area: footer;
 }
 
+.button-one{
+    background-color: green;
+    width: 300px;
+    margin-top: 20px;
+    height: 70px;
+    font-size: 50px;
+    margin-left: 20px;
+    color: aliceblue;
+    font-family: roboto;
+    
+}
